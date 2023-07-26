@@ -1,10 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const List = styled.ul`
-  display:flex;
+  display: flex;
   gap: 15px;
-  `
-
+`;
 
 export const Button = styled.button`
   padding: 10px 20px;
@@ -16,11 +15,11 @@ export const Button = styled.button`
   transition: transform 0.1s ease-out;
   font-weight: 400;
   &:hover {
-  transform: scale(1.05);
-  box-shadow: 1px 1px 5px black;
-}
-&:active {
-  transform: scale(1.1);
-  box-shadow: 1px 1px 7px black;
-}
-  `
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px black;
+  }
+  &:active {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 7px black;
+  }
+`;
