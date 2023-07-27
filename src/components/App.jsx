@@ -10,6 +10,8 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
+  const feedbackOptions = ['good', 'neutral', 'bad'];
+
   const countTotalFeedback = () => good + bad + neutral;
 
   const countPositiveFeedbackPercentage = () => {
@@ -19,8 +21,8 @@ export const App = () => {
   };
 
   const onLeaveFeedback = e => {
-    const { name } = e.target;
-    switch (name) {
+    const { type } = e.target;
+    switch (type) {
       case 'good':
         setGood(prevGood => prevGood + 1);
         break;
@@ -34,8 +36,6 @@ export const App = () => {
         break;
     }
   };
-
-  const feedbackOptions = ['good', 'neutral', 'bad'];
 
   return (
     <>
