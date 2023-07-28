@@ -21,8 +21,8 @@ export const App = () => {
   };
 
   const onLeaveFeedback = e => {
-    const { type } = e.target;
-    switch (type) {
+    const { name } = e.target;
+    switch (name) {
       case 'good':
         setGood(prevGood => prevGood + 1);
         break;
